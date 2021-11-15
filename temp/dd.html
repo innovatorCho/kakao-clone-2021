@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            background-color: gainsboro;
+        }
+        span:first-child {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        div {
+            width: 500px;
+            height: 700px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        div > div {
+            width: 230px;
+            height: 300px;
+        }
+        div > div:nth-child(n) {
+            position: relative;
+            border:5px solid white;
+        }
+        div > div:nth-child(n) > div {
+            background-color: white;
+            height: 100px;
+            width: 220px;
+            position: absolute;
+            top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction:column;
+            align-items: flex-start;
+        }
+        div > div:nth-child(1) {
+            background-color: tomato;
+        }
+        div > div:nth-child(2) {
+            background-color: teal;
+        }
+        div > div:nth-child(3) {
+            background-color: burlywood;
+        }
+        div > div:nth-child(4) {
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <span>The Best Colors</span>
+    <div>
+        <div>
+            <div>
+                <h2>Tomato</h2>
+                <span>#FF6347</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Teal</h2>
+                <span>#008080</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Burlywood</h2>
+                <span>#DEB887</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Thistle</h2>
+                <span>#D7BFD7</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

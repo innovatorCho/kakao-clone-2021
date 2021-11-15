@@ -8,26 +8,27 @@
     <style>
         body {
             height: 3000vh;
-            margin: 20px;
+            margin: 50px;
         }
         div {
             width: 300px;
-            height: 200px;
-        }
-        #green {
-            background-color: teal;
-            position: fixed;
-            opacity: 0.2;
-
-        }
-        #deff {
+            height: 300px;
             background-color: thistle;
-
+            position: relative;
+        }
+        .green {
+            width: 100px;
+            height: 100px;
+            background-color: wheat;
+            position: absolute;
+            top: 0px;
+            right: 0px;
         }
     </style>
 </head>
 <body>
-    <div id="green"></div>
-    <div id="deff"></div>
+    <div>
+        <div class="green"></div>
+    </div>
 </body>
 </html>

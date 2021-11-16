@@ -3,14 +3,19 @@
 <head>
     <title>Document</title>
     <style>
+        @keyframes confFlip {
+            from {
+                transform: rotate(0);
+            }
+            to {
+                transform: rotateX(180deg) translateX(100px);
+            }
+        }
         img {
             border: 10px solid black;
             border-radius: 50%;
             transition: transform 5s ease-in-out;
-
-        }
-        img:hover {
-            transform: rotateZ(360deg) scale(0.5);
+            animation: confFlip 5s ease-in-out infinite;
         }
     </style>
 </head>

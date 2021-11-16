@@ -6,67 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            margin: 30px;
-            background-color: gainsboro;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-        }
-        div {
-            width: 450px;
-            border:1px solid black;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            align-content: center;
-        }
-        div > span {
-            font-size: 2em;
-            font-weight: bold;
-            display: flex;
-            justify-content: center;
-        }
-        div > div {
-            height: 700px;
-            position: relative;
-        }
-        div > div > div {
-            width: 200px;
-            height: 300px;
-            position: absolute;
-        }
-        div > div:nth-child(1) {
-            top: 0px;
-            left: 0px;
+        a {
+            color: white;
             background-color: tomato;
+            text-decoration: none;
+            padding: 3px 5px;
+            border-radius: 5px;
+            font-size: 55px;
+            transition: all 1s ease-in-out;
         }
-        div > div:nth-child(2) {
-            top: 0px;
-            right: 0px;
-            background-color: teal;
-        }
-        div > div:nth-child(3) {
-            bottom: 50px;
-            left: 0px;
-            background-color: burlywood;
-        }
-        div > div:nth-child(4) {
-            bottom: 50px;
-            right: 0px;
-            background-color: thistle;
+        a:hover {
+            border-radius: 20px;
+            color: tomato;
+            background-color: white;
         }
     </style>
 </head>
 <body>
-    <div>
-        <span>The Best Colors</span>
-        <div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-        </div>
-    </div>
+    <a href="#">GO HOME</a>
 </body>
 </html>

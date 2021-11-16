@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes cook {
+            0% {
+                transform: rotate(0);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes delay-ani {
+            0% {
+                transform: scaleY(1);
+            }
+            50% {
+                transform: scaleY(2);
+            }
+            100% {
+                transform: scaleY(1);
+            }
+        }
+        body {
+            background-color: turquoise;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .circle-group {
+            padding: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: space-between;
+            animation: cook 5s ease-in-out infinite;
+        }
+        .circle {
+            width: 2px;
+            height: 2px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .delay-group {
+            display: flex;
+            justify-content: space-between;
+            width: 20px;
+        }
+        .delay {
+            background-color: white;
+            width: 3px;
+            height: 10px;
+            animation: delay-ani 2s ease-out infinite; 
+        }
+        .delay:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .delay:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        .delay:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+        .delay:nth-child(5) {
+            animation-delay: 0.8s;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle-group">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="delay-group">
+        <div class="delay"></div>
+        <div class="delay"></div>
+        <div class="delay"></div>
+        <div class="delay"></div>
+        <div class="delay"></div>
+    </div>
+</body>
+</html>

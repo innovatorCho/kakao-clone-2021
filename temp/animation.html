@@ -19,13 +19,13 @@
         }
         @keyframes delay-ani {
             0% {
-                transform: scaleY(1);
+                transform: none;
             }
-            50% {
+            25% {
                 transform: scaleY(2);
             }
-            100% {
-                transform: scaleY(1);
+            50% {
+                transform: none;
             }
         }
         body {
@@ -58,19 +58,19 @@
             background-color: white;
             width: 3px;
             height: 10px;
-            animation: delay-ani 2s ease-out infinite; 
+            animation: 0.8s ease-in-out infinite delay-ani; 
         }
         .delay:nth-child(2) {
-            animation-delay: 0.2s;
+            animation-delay: 0.1s;
         }
         .delay:nth-child(3) {
-            animation-delay: 0.4s;
+            animation-delay: 0.2s;
         }
         .delay:nth-child(4) {
-            animation-delay: 0.6s;
+            animation-delay: 0.3s;
         }
         .delay:nth-child(5) {
-            animation-delay: 0.8s;
+            animation-delay: 0.4s;
         }
     </style>
 </head>

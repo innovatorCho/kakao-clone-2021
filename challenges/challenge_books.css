@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+  }
+:root {
+    --yellow: #fae100;
+}
+
+body {
+    margin:150px;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    background-color: var(--yellow);
+}
+.status-bar_columns {
+    width: 33%;
+}
+.status-bar_columns:first-child {
+    display: flex;
+    justify-content: flex-start;
+}
+.status-bar_columns:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+.status-bar_columns:last-child {
+    display: flex;
+    justify-content: flex-end;
+
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar__items {
+    width: 70%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+.search--text {
+    margin: 0px 20px;
+    width: 90%;
+    height:50px;
+    border: none;
+    font-size: 30px;
+}
+.search--text:focus {
+    border:none;
+}
+.main-bar__title {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.main-bar {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.main-bar__items {
+    display: flex;
+    justify-content: center;
+}
+.img--small {
+    background-position: center;
+    background-size: cover;
+    width: 90px;
+    height: 140px;
+    border-radius: 15px;
+}
+.img--default {
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 200px;
+    border-radius: 15px;
+}
+.img--big {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.main-bar__img {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/517X7gyfYHL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg");
+}
+.main-bar__text {
+    margin: 0px 20px;
+}
+.main-bar__text p:first-child {
+    font-size: 30px;
+    font-weight: bolder;
+}
+.main-bar__text p:last-child {
+    font-size: 20px;
+    color: gray;
+}
+.books__com {
+    margin: 10px 0px;
+}
+.color--gold {
+    color:var(--yellow);
+}
+.color--gray {
+    color: #b8b7b3fb;
+}
+.main-bar__category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category--text {
+    background-color: rgb(240, 236, 236);
+    width: 100px;
+    height: 40px;
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    border-radius: 10px;
+    
+}
+.main-bar__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+.lib__bookmark{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+}
+.lib__bookread {
+    background-color: black;
+    width: 130px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.lib__bookread span {
+    color: white;
+}
+.header-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-bar__items {
+    display: flex;
+    justify-content: space-between;
+}
+.header-bar__img01 {
+    background-image: url("http://image.kyobobook.co.kr/images/book/large/446/l9791157845446.jpg");
+}
+.header-bar__img02 {
+    background-image: url("http://image.kyobobook.co.kr/images/book/large/432/l9791190977432.jpg");
+}
+.header-bar__img03 {
+    background-image: url("http://image.kyobobook.co.kr/images/book/large/603/l9791165216603.jpg");
+}
+.header-bar__img04 {
+    background-image: url("http://image.kyobobook.co.kr/images/book/large/408/l9791162542408.jpg");
+}
+.header-bar__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.popular-bar__img {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLGhm0hvIhvwlAfduha96tk_0sWy9i2rGDWdh7aCGNXqDHUjM7lbChwYSKPNK9TnCjMc&usqp=CAU");
+}
+.popular-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popular-bar__text p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.popular-bar__text span {
+    display: block;
+    word-break: normal;
+}
